@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script>
+            var App = angular.module('App', []);
+            App.controller('Controller', function($scope, $http){
+               $scope.people = {};
+               $scope.init = function(){                   
+                   $scope.people = JSON.parse(window.sessionStorage.getItem('people'));
+                   window.sessionStorage.removeItem('people');
+               }
+               $scope.init();
+            });           
+        </script>
+    </head>
+    <body>
+        <div ng-app="App" ng-controller="Controller">            
+            <label for="id">Id:</label>
+            <input type="text" ng-model="people.id" id="id">
+            <br>
+            <label for="id">Nome:</label>
+            <input type="text" ng-model="people.name"id="name">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+.zera {
+	margin:0 auto;
+	padding:0;
+}
+
+.padding {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.padding-10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.padding-20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.test {
+	background: red;
+}
+
+.test2 {
+	background: blue;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.fundo {
+	background: url(../img/banner.jpg) 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+.menu {
+	background: rgba(43, 36, 36, 0.3);
+}
+
+.links {
+
+}
+
+.link {
+	color:#fff;
+	font-weight: 600;
+	font-size: 12px
+}
+
+.fund {
+background:#F8F8F8;}
+.espaco {
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom:25px;
+}
+
+.image {
+	padding-bottom: 20px
+}
+
+.image img {
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+}
