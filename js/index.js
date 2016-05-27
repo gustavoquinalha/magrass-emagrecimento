@@ -45,7 +45,7 @@ function InstantSearchController($scope){
 		{
 			id: 1,
 			title: 'Avaliação personalizada',
-			text: 'A Avaliação Personalizada Magrass é um instrumento especial que tem praticamente o mesmo valor de um laudo médico. Sendo totalmente baseada em fontes científicas internacionais (O.M.S, Sociedade Brasileira de Cardiologia e o renomado fisiologista Dr. Cooper), ela trás leituras sobre o Índice de Massa Corporal e mostra tecnicamente se existe ou não excesso de peso em relação a estatura, esse dado deve sempre ser analisado em conjunto com a Análise da Composição Corporal, que por sua vez demonstra se existe ou não excesso de gordura corporal. Analisando assim, nossos clientes conseguem compreender que um simples excesso de gordura corporal, muito mais do que atrapalhar sua imagem no espelho, pode afetar a saúde, alterando níveis de colesterol e açúcar sanguíneo.',
+			text: 'A Avaliação Personalizada Magrass é um instrumento especial que tem praticamente o mesmo valor de um laudo médico. Sendo totalmente baseada em fontes científicas internacionais (O.M.S, Sociedade Brasileira de Cardiologia e o renomado fisiologista Dr. Cooper), ela trás leituras sobre o Índice de Massa Corporal e mostra tecnicamente se existe ou não excesso de peso em relação a estatura, esse dado deve sempre ser analisado em conjunto com a Análise da Composição Corporal, que por sua vez demonstra se existe ou não excesso de gordura corporal.',
 			image: 'img/estetica-avaliacao.jpg',
 			type: 1
 		},{

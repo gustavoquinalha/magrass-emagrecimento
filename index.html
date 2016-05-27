@@ -17,39 +17,46 @@
 
   	<body ng-app="instantSearch" ng-controller="InstantSearchController">
 
-  		<div class="container zera padding-10">
-  			<div class="col-md-6 col-xs-6 text-left" style="margin:0 auto; padding:0">
-  				<a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Nossas Unidades</a>
-  			</div>
-  			<div class="col-md-6 col-xs-6 text-right" style="margin:0 auto; padding:0">
-  				<a class="btn btn-success" href="#" role="button"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> Magrass Clube</a>
-  			</div>
-  		</div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background: #6EAB2C; color: #fff">
+            <div class="container-fluid" style="width: 90%">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="100"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right" style="color:#fff">
+                        <li><a href="" class="" style="color:#fff">ESPECIALIDADES MAGRASS</a></li>
+                        <li><a href="" class="" style="color:#fff">EMAGRECIMENTO SAUDÁVEL</a></li>
+                        <li><a href="" class="" style="color:#fff">ESTÉTICA DE RESULTADO</a></li>
+                        <li><a href="" class="" style="color:#fff">BLOG</a></li>
+                        <li><a href="" class="" style="color:#fff">FRANQUIA</a></li>
+                        <li><a href="" class="" style="color:#fff">SOBRE NÓS</a></li>
+                        <li style="padding-top: 12px"><a class="btn btn-default btn-xs" style="background: transparent;color:white;padding: 0; padding-left: 10px; margin-right: 5px ;padding-right: 15px; font-weight: normal" href="#" role="button"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Nossas Unidades</a> </li>
+                        <li style="padding-top: 12px"><a class="btn btn-default btn-xs" style="background: transparent;color:white;padding: 0; padding-left: 10px; padding-right: 15px" href="#" role="button"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Clube Magrass</a> </li>
+                        
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+  		
 
   		<div class="container-fluid fundo" style="margin:0 auto; padding:0">
   			<div class="zera container-fluid padding-20 menu" style="width:100%">
   				<div class="container">
-  					<div class="col-md-3">
-  						<div class="logo">
-  							<img src="img/logo.png" class="center-block responsive-image">
-  						</div>
-  					</div>
-  					<div class="col-md-9">
-  						<div class="links">
-  							<ul class="list-inline">
-  								<li class="nav"><a href="" class="link">ESPECIALIDADES<br>MAGRASS</a></li>
-  								<li><a href="" class="link">EMAGRECIMENTO<br>SAUDÁVEL</a></li>
-  								<li><a href="" class="link">ESTÉTICA DE RESULTADO</a></li>
-  								<li><a href="" class="link">BLOG</a></li>
-  								<li><a href="" class="link">FRANQUIA</a></li>
-  								<li><a href="" class="link">NOSSAS<br>UNIDADES</a></li>
-  								<li><a href="" class="link">SOBRE NÓS</a></li>
-  							</ul>
-  						</div>
-  					</div>
+  					
+  					
   				</div>
   			</div>
   		</div>
+
+
 
   		<div class="container-fluid" style="padding:0; margin:0 auto">
   			<div class="container">
@@ -150,8 +157,8 @@
               <div class="form-group">
                 <label class="sr-only" for="exampleInputAmount"></label>
                 <div class="input-group">
-                  <div class="input-group-addon">$</div>
-                  <input type="text" ng-model="searchString" class="form-control" id="exampleInputAmount" placeholder="Pesquise por algum tratamento">
+                  <div class="input-group-addon" style="background: transparent; text-align: center"><span class="glyphicon glyphicon-search center-block" aria-hidden="true"></span></div>
+                  <input type="text" ng-model="searchString" class="form-control" id="exampleInputAmount" placeholder="Pesquisar" style="border-left: none;padding-bottom: 30px; padding-top: 30px">
                 </div>
                 <div class="tags">
       <ul class="list-inline">
@@ -166,14 +173,16 @@
 
 
           <div ng-repeat="i in items | searchFor:searchString | filter:myFilter | orderBy:'id'">
-          <div class="col-md-6 " style="background:url( {{i.image}}); margin: 0; padding:0; border:5px solid #fff">
+          <div class="col-md-6 " style="margin: 0; padding:0; border:5px solid #fff">
             <div class="card" style="margin:0; padding:0">
-              
+              <div class="ima" style="background:url( {{i.image}});">
+                
+              </div>
               <div class="text">
             
                 <p>
-                  <h2>{{ i.title }}</h2>
-                  <span>{{ i.text }}</span><br>
+                 <h2 style="font-size: 22px; text-align: center; color: #6EAB2C;">{{ i.title }}</h2>
+                  <span style="font-size: 12px; letter-spacing: 0px; font-weight: 2px; text-align: center;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ i.text }}</span><br>
                 </p>
 
             </div>
@@ -210,19 +219,19 @@
     <div class="container padding">
     <div class="col-md-4">
        <a class="btn ex" href="#" role="button" style="font-size: 20px; text-align: center;">
-            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Magrass Clube
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Magrass Clube
        </a>
     </div>
 
     <div class="col-md-4">
        <a class="btn ex" href="#" role="button" style="font-size: 20px">
-            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Magrass Franquia
+            <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Magrass Franquia
        </a>
     </div>
 
     <div class="col-md-4">
        <a class="btn ex" href="#" role="button" style="font-size: 20px">
-            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Chat online para franquias
+            <span class="glyphicon glyphicon-send" aria-hidden="true"></span> Chat online para franquias
        </a>
     </div>
       
